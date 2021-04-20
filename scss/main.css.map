@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,IAAI,CAAC;EACD,UAAU,ECHN,OAAO;CDId;;AAED,AAAA,KAAK,CAAC;EACF,MAAM,EAAE,KAAK;CAChB",
+    "sources": [
+        "main.scss",
+        "_styles.scss",
+        "_colors.scss",
+        "_colors.scss",
+        "_fonts.scss",
+        "_responsive.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
