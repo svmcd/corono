@@ -14,3 +14,19 @@
 html {
     scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;    
+}
+
+::selection {
+    color: $primary;
+    background-color: $light;
+}

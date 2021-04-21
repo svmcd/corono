@@ -1,9 +1,23 @@
 .section {
   height: 100vh;
+  position: relative;
+  z-index: 5;
+}
+
+.section * {
+  z-index: 5;
+}
+
+.wave {
+  position: absolute;
+  bottom: -1em;
+  z-index: 1;
 }
 
 .hero {
   background-color: #FCFCFC;
+  position: relative;
+  height: 100vh;
 }
 
 .hero .nav {
@@ -18,6 +32,9 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 1em 4em;
+  position: relative;
+  -webkit-transform-style: inherit;
+          transform-style: inherit;
 }
 
 .hero .nav .logo {
@@ -119,11 +136,79 @@
 
 .section3 {
   background-color: #EE6055;
-  height: 85vh;
+  position: relative;
+}
+
+.section3 .scroll-top {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  background-color: #FCFCFC;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.section3 .scroll-top:hover {
+  background-color: #ECE9EA;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+.section3 .scroll-top a {
+  color: #007EA7;
+  font-size: 1.5rem;
 }
 
 footer {
-  height: 15vh;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #040403;
+}
+
+footer .footer-column {
+  margin: 0 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-column .logo {
+  height: 2rem;
+  cursor: pointer;
+}
+
+footer .footer-column i {
+  color: #007EA7;
+  margin-left: .5em;
+  font-size: 1.5rem;
+}
+
+footer .footer-column i:hover {
+  color: #EE6055;
+  -webkit-transition: color .4s;
+  transition: color .4s;
 }
 
 @media screen and (max-width: 992px) {
@@ -155,6 +240,9 @@ footer {
     -webkit-transition: color .4s ease;
     transition: color .4s ease;
   }
+  .nav {
+    display: none;
+  }
 }
 
 * {
@@ -167,5 +255,28 @@ footer {
 
 html {
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  color: #007EA7;
+  background-color: #ECE9EA;
+}
+
+::selection {
+  color: #007EA7;
+  background-color: #ECE9EA;
 }
 /*# sourceMappingURL=main.css.map */

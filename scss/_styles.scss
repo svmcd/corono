@@ -2,10 +2,24 @@
 
 .section {
     height: 100vh;
+    position: relative;
+    z-index: 5;
+
+    * {
+        z-index: 5;
+    }
+}
+
+.wave {
+    position: absolute;
+    bottom: -1em;
+    z-index: 1;
 }
 
 .hero {
     background-color: $white;
+    position: relative;
+    height: 100vh;
 
     .nav {
         height: 80px;
@@ -13,6 +27,8 @@
         justify-content: space-between;
         align-items: center;
         padding: 1em 4em;
+        position: relative;
+        transform-style: inherit;    
     
         .logo {
             height: 2rem;
@@ -95,9 +111,59 @@
 
 .section3 {
     background-color: $secondary;
-    height: 85vh;
+    position: relative;
+
+    .scroll-top {
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
+        background-color: $white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $light;
+            transition: color .4s;
+        }
+        
+        a {
+            color: $primary;
+            font-size: 1.5rem;
+        }
+    }
 }
 
 footer {
-    height: 15vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $black;
+
+    .footer-column {
+        margin: 0 5em;
+        display: flex;
+        align-items: center;
+
+        .logo {
+            height: 2rem;
+            cursor: pointer;
+        }
+
+        i {
+            color: $primary;
+            margin-left: .5em;
+            font-size: 1.5rem;
+
+            &:hover {
+                color: $secondary;
+                transition: color .4s;
+            }
+        }
+    }
 }
