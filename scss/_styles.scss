@@ -1,9 +1,44 @@
 @import '_colors.scss';
 
-body {
-    background: $white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo {
-    height: 100px;
+.section {
+    height: 100vh;
+}
+.hero {
+    background-color: $white;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .logo {
+        height: 2rem;
+        cursor: pointer;
+    }
+}
+
+.section1 {
+    background-color: $primary;
+}
+
+.section2 {
+    background-color: $white;
+}
+
+.section3 {
+    background-color: $secondary;
+    height: 85vh;
+}
+
+footer {
+    height: 15vh;
 }

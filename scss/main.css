@@ -1,8 +1,51 @@
-body {
-  background: #FCFCFC;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.logo {
-  height: 100px;
+.section {
+  height: 100vh;
+}
+
+.hero {
+  background-color: #FCFCFC;
+}
+
+header {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+header .logo {
+  height: 2rem;
+  cursor: pointer;
+}
+
+.section1 {
+  background-color: #007EA7;
+}
+
+.section2 {
+  background-color: #FCFCFC;
+}
+
+.section3 {
+  background-color: #EE6055;
+  height: 85vh;
+}
+
+footer {
+  height: 15vh;
 }
 /*# sourceMappingURL=main.css.map */
