@@ -1,4 +1,4 @@
-![corono](images/logo.svg)
+![corono](images/corono.svg)
 
 [live website](https://samedpolat.nl/corono/)
 
