@@ -1,0 +1,74 @@
+
+.hero .hero-content .hero-content-text {
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-content .hero-content-text .text-box {
+  width: 40vw;
+}
+.hero .hero-content .hero-content-text .text-box h1 {
+  font-size: 3rem;
+  color: var(--primary);
+}
+.hero .hero-content .hero-content-text .text-box p {
+  color: var(--black);
+  margin: 2em 0em 2em 0em;
+  font-size: 1.2rem;
+}
+.hero .hero-content .hero-content-text .text-box button {
+  margin: 0em 1em 0em 0em;
+  font-size: 0.8em;
+}
+
+.hero .hero-content .hero-content-image {
+  width: 50%;
+  height: 100%;
+}
+
+
+.section-title {
+  text-align: center;
+  color: var(--white);
+  font-size: 2rem;
+}
+
+#section-title-lid {
+  color: var(--black);
+}
+
+.section1 {
+    background-color: var(--primary);
+}
+
+.section2 {
+    background-color: var(--white);
+}
+
+  .section3 {
+    background-color: var(--secondary);
+    position: relative;
+  }
+  .section3 .scroll-top {
+    position: absolute;
+    background-color: var(--white);
+    bottom: 1em;
+    right: 1em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .section3 .scroll-top:hover {
+    transition: color 0.4s;
+    background-color: var(--light);
+  }
+  .section3 .scroll-top a {
+    font-size: 1.5rem;
+    color: var(--primary);
+  }
