@@ -1,0 +1,35 @@
+
+#support {
+    color: var(--primary);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    flex-direction: column;
+}
+
+.contact-container form {
+    padding: 4em;
+}
+
+.contact-form-container {
+    display: flex;
+}
+
+.contact-form-container * {
+    margin: 2px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.contact-form-container .left, .right {
+    display: flex;
+    flex-direction: column;
+}

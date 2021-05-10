@@ -1,5 +1,71 @@
 .wave {
-    bottom: 0;
+    bottom: -1em;
 }
 
+#support {
+    color: var(--primary);
+}
 
+.faq-container {
+    display: flex;
+    height: 70vh;
+    padding: 2em;
+    flex-direction: column;
+}
+
+.faq {
+    width: 100%;
+    min-height: 50vh;
+    font-size: 1rem;
+    line-height: 140%;
+    opacity: 0.3;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.acc-container {
+    padding: 4rem 2rem;
+}
+.acc-btn {
+    width: 80%;
+    padding: 1.6rem 2rem;
+    font-size: 1em;
+    cursor: pointer;
+    background: inherit;
+    border: none;
+    outline: none;
+    text-align: left;
+    transition: all 0.5s linear;
+}
+.acc-btn:after {
+    content: "\27A4";
+    color: var(--primary);
+    float: right;
+    transition: all 0.3s linear;
+}
+.acc-btn.is-open:after {
+    transform: rotate(90deg);
+}
+.acc-btn:hover, .acc-btn.is-open {
+    color: #000;
+    font-weight: bold;
+}
+
+.acc-content {
+    max-height: 0;
+    color: rgba(0,0,0,0.75);
+    font-size: 1em;
+    margin: 0 2rem;
+    padding-left: 6rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+}
+
+.contact-link {
+    padding-top: 4em;
+}

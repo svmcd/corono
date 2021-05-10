@@ -80,12 +80,15 @@
 }
 .hero .nav .header-links .header-links-link::after {
   content: "";
-  display: none;
-  width: 85%;
-  height: 2px;
-  border-radius: 50px;
   position: absolute;
-  background-color: var(--secondary);
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
 }
 
 .hero .nav .header-links .header-links-link:hover {
@@ -93,10 +96,8 @@
 }
 
 .hero .nav .header-links .header-links-link:hover::after {
-  display: block;
-  background-color: var(--primary);
-  animation-name: link;
-  animation-duration: 0.4s;
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 .hero .hero-content {
@@ -118,6 +119,13 @@
   to {
     width: 100%;
   }
+}
+
+.hero-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
 }
   
   .button {
@@ -146,7 +154,7 @@
     left: 0;
     transform: scaleX(0);
     transform-origin: left;
-    z-index: 1;
+    z-index: -1;
     transition: transform 200ms ease-in;
   }
   .cta-button:hover::after {
@@ -159,7 +167,6 @@
     border: 2px var(--secondary) solid;
     color: var(--secondary);
     position: relative;
-    margin-left: 1em;
   }
 
   .normal-button:hover {
@@ -186,7 +193,6 @@
   
   footer {
     height: 20vh;
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -208,4 +214,28 @@
   footer .footer-column i:hover {
     transition: color 0.4s;
     color: var(--secondary);
+  }
+
+  .link {
+    color: var(--secondary);
+    position: relative;
+
+  }
+
+  .link::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    transform: scaleX(0);
+    bottom: 0;
+    transform-origin: left;
+    left: 0;
+    height: 2px;
+    background-color: var(--secondary);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .link:hover::after {
+    background-color: var(--secondary);
+    transform: scaleX(1);
   }
