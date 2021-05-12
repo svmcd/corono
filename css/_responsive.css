@@ -2,10 +2,32 @@
     .header-links {
       max-width: 450px;
     }
+
+    #hero-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   
-    footer {
+    #footer {
       justify-content: space-around;
+      padding: 0 4em;
+      width: 100vw;
+    }
+
+    #over-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    #over-grid .over-svg {
+      display: none;
+    }
+
+    #over-grid .tekst {
+      text-align: center;
       padding: 0;
+      margin-bottom: 2em;
     }
   }
   @media screen and (max-width: 600px) {
@@ -13,10 +35,31 @@
       width: 100%;
       text-align: center;
       height: 50%;
+      margin-top: 3em;
     }
     #hero-content-text .text-box {
       width: 80%;
+      margin-top: 4em;
+      font-size: 1em;
     }
+
+    #text-box h1 {
+      font-size: 2em;
+    }
+
+    #hero-button-group {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    #cta-button {
+      margin-bottom: 1em;
+    }
+
   
     #nav {
       padding: 1em;

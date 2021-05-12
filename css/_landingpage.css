@@ -26,6 +26,14 @@
 .hero .hero-content .hero-content-image {
   width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 30vw;
+  margin-bottom: 20vh;
 }
 
 
@@ -33,6 +41,7 @@
   text-align: center;
   color: var(--white);
   font-size: 2rem;
+  margin-bottom: 2em;
 }
 
 #section-title-lid {
@@ -41,6 +50,45 @@
 
 .section1 {
     background-color: var(--primary);
+}
+
+.over-grid-container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em;
+}
+
+.over-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.over-grid .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.over-grid .tekst {
+  color: var(--white);
+  font-size: 1.2em;
+  padding: 4em;
+}
+
+.over-grid .tekst1 {
+  text-align: left;
+}
+
+.over-grid .tekst2 {
+  text-align: right;
+}
+
+.over-grid .over-svg {
+  width: 300px;
 }
 
 .section2 {
