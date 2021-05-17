@@ -29,7 +29,16 @@
       padding: 0;
       margin-bottom: 2em;
     }
+
+    .over-corono-container p {
+      font-size: .84rem;
+    }
+  
   }
+
+
+
+
   @media screen and (max-width: 600px) {
     #hero-content-text {
       width: 100%;

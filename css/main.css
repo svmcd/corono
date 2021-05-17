@@ -53,10 +53,9 @@
   align-items: center;
   position: relative;
   flex-wrap: wrap;
-  padding: 2em;
+  padding: 1em 2em;
 }
 .hero .nav .logo {
-  padding: 1em 2em;
   height: 2rem;
   cursor: pointer;
 }
@@ -238,4 +237,8 @@
   .link:hover::after {
     background-color: var(--secondary);
     transform: scaleX(1);
+  }
+
+  .belangrijk {
+    color: var(--secondary);
   }
