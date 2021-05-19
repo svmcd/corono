@@ -1,6 +1,18 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .header-links {
-      max-width: 450px;
+      max-width: 650px;
+    }
+
+    #header-links {
+      display: none;
+      flex-direction: column;
+      min-width: 100%;
+      text-align: center;
+      margin-top: 0.5em;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      background-color: var(--light);
     }
 
     #hero-content {
@@ -8,43 +20,13 @@
       justify-content: center;
       align-items: center;
     }
-  
-    #footer {
-      justify-content: space-around;
-      padding: 0 4em;
-      width: 100vw;
-    }
 
-    #over-grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-    }
-
-    #over-grid .over-svg {
-      display: none;
-    }
-
-    #over-grid .tekst {
-      text-align: center;
-      padding: 0;
-      margin-bottom: 2em;
-    }
-
-    .over-corono-container p {
-      font-size: .84rem;
-    }
-  
-  }
-
-
-
-
-  @media screen and (max-width: 600px) {
     #hero-content-text {
       width: 100%;
       text-align: center;
       height: 50%;
       margin-top: 3em;
+      margin-bottom: 30vh;
     }
     #hero-content-text .text-box {
       width: 80%;
@@ -69,6 +51,56 @@
       margin-bottom: 1em;
     }
 
+    #hero-content-image {
+      display: none;
+    }
+  
+    #footer {
+      justify-content: space-around;
+      width: 100vw;
+    }
+
+    #over-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    #over-grid .over-svg {
+      display: none;
+    }
+
+    #over-grid .tekst {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 2em;
+    }
+
+    .over-corono p {
+      font-size: 1px;
+    }
+
+    #wordlid {
+      height: 275vh;
+    }
+
+    .abonnementen {
+      flex-direction: column;
+    }
+
+    #wordlid .card {
+      height: 500px;
+      width: 400px;
+      margin: 0;
+      margin-top: 20px;
+      z-index: 0;
+    }
+  
+  }
+
+
+
+
+  @media screen and (max-width: 1000px) {
   
     #nav {
       padding: 1em;
@@ -91,17 +123,6 @@
       bottom: -1px;
     }
   
-    #header-links {
-      display: none;
-      flex-direction: column;
-      max-width: 100%;
-      text-align: center;
-      margin-top: 0.5em;
-      position: absolute;
-      top: 100px;
-      left: 0;
-      background-color: var(--light);
-    }
     #header-links a {
       line-height: 25px;
     }
