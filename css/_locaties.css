@@ -1,0 +1,83 @@
+
+
+.section {
+    height: 300vh;
+    z-index: 0;
+}
+
+.searchbar-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar-wrap input[type=text] {
+    padding: 1em;
+    margin: 2em;
+    margin-right: 0;
+    margin-left: 5px;
+    width: 50vw;
+    border-radius: 50px 0px 0px 50px;
+    border-style: solid;
+    font-size: 1rem;
+    border-color: var(--light);
+}
+
+.searchbar-wrap button {
+    padding: 1.1em;
+    background-color: var(--primary);
+    color: var(--light);
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 0 50px 50px 0;
+}
+
+.searchbar-wrap button:hover {
+    background-color: var(--primary);
+}
+
+
+.locaties-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.locatie-wrap {
+    width: 80%;
+    margin-top: 2em;
+    overflow: hidden;
+}
+
+.locatie-box {
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    background-color: var(--light);
+    height: 2px;
+    border: none;
+}
+
+.locatie-description {
+    margin-left: 1em;
+}
+
+.locatie-description h2 {
+    color: var(--primary);
+    margin-bottom: .5em;
+    cursor: pointer;
+}
+
+.locatie-description p {
+    color: rgba(0, 0, 0, 0.466);
+}
+
+
+.locatie-image img {
+    height: 150px;
+    cursor: pointer;
+    border-radius: 10px;
+}

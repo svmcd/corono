@@ -19,8 +19,8 @@
                 <button class="hamburger" id="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
                 <div class="header-links" id="header-links">
                     <a href="#overcorono" class="header-links-link link">over corono</a>
-                    <a href="#winkels" class="header-links-link link">winkels</a>
-                    <a href="pages/support.html" class="header-links-link link">support</a>
+                    <a href="#winkels" class="header-links-link link">vestigingen</a>
+                    <a href="pages/support.php" class="header-links-link link">support</a>
                     <a href="#wordlid" class="cta-button">word lid</a>
                 </div>
             </header>
@@ -60,7 +60,7 @@
                         <p>met een corono abonnement kan je elke winkel of horeca die met ons samenwerkt afspraakloos in! daarnaast krijg je ook 5% cashback voor elke €100 die je besteedt. bekijk <a href="#wordlid" class="link">hier</a> de abonnementen en profiteer nu van de verschillende voordelen en kortingen van jouw favoriete winkel!</p>
                     </div>
                     <div class="item tekst tekst2">
-                        <p>in samenwerking met andere winkels en horeca zorgt corono ervoor dat mensen weer vrij kunnen winkelen. momenteel werkt corono samen met 76 winkelketens en 81 horeca, en binnenkort nog meer! <br> <a class="link" href="pages/over-corono.html">lees meer</a> </p>
+                        <p>in samenwerking met andere winkels en horeca zorgt corono ervoor dat mensen weer vrij kunnen winkelen. momenteel werkt corono samen met 76 winkelketens en 81 horeca, en binnenkort nog meer! <br> <a class="link" href="pages/over-corono.php">lees meer</a> </p>
                     </div>
                     <div class="item">
                         <img class="over-svg" src="images/over2.svg" alt="">
@@ -72,8 +72,26 @@
             </svg>
         </div>
         <div id="winkels" class="section section2">
-            <div class="section-title">
-                <h2 id="section-title-lid">winkels</h2>
+            <div class="winkels-container">
+                <div class="section-title">
+                    <h2 id="section-title-lid">vestigingen</h2>
+                    <p class="section-description" >geniet van je corono voordelen op deze vestigingen!</p>
+                </div>
+                <div class="winkels-grid-container">
+                    <div class="item"><img src="images/voorbeeldfoto.png" alt=""></div>
+                    <div class="item"><img src="images/voorbeeldfoto.png" alt=""></div>
+                    <div class="item"><img src="images/voorbeeldfoto.png" alt=""></div>
+                    <div class="item"><img src="images/voorbeeldfoto.png" alt=""></div>
+                    <div class="item"><img src="images/voorbeeldfoto.png" alt=""></div>
+                    <div class="item"><img src="images/voorbeeldfoto.png" alt=""></div>
+                    <div class="item"><img src="images/voorbeeldfoto.png" alt=""></div>
+                    <div class="item"><img src="images/voorbeeldfoto.png" alt=""></div>
+                    <div class="item"><img src="images/voorbeeldfoto.png" alt=""></div>
+                    <div class="item"><img src="images/voorbeeldfoto.png" alt=""></div>
+                </div>
+                <div class="winkels-button-container">
+                    <a href="pages/locaties.php">bekijk ze allemaal</a>
+                </div>
             </div>
             <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#EE6055" fill-opacity="1" d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,234.7C1120,245,1280,235,1360,229.3L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
@@ -82,7 +100,7 @@
         <div id="wordlid" class="section section3">
             <div class="section-title">
                 <h2>word lid</h2>
-                <p>winkel & eet afspraakloos bij je favoriete winkel of restaurant!</p>
+                <p class="section-description" >winkel & eet afspraakloos bij je favoriete winkel of restaurant!</p>
             </div>
             <div class="section-content abonnementen">
                 <div class="card card-sec card1">
@@ -108,7 +126,7 @@
                         </div>
                     </div>
                     <div class="card-button">
-                        <input type="submit" value="aan de slag">
+                        <input class="card-button--arrow" type="submit" value="aan de slag">
                         <p>gebruiksvoorwaarden zijn van toepassing.</p>
                     </div>
                 </div>
@@ -139,7 +157,7 @@
                         </div>
                     </div>
                     <div class="card-button">
-                        <input type="submit" value="aan de slag">
+                        <input class="card-button--arrow" type="submit" value="aan de slag">
                         <p>gebruiksvoorwaarden zijn van toepassing.</p>
                     </div>
                 </div>
@@ -173,8 +191,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-button">
-                        <input type="submit" value="aan de slag">
+                    <div class="card-button ">
+                        <input class="card-button--arrow" type="submit" value="aan de slag">
                         <p>gebruiksvoorwaarden zijn van toepassing.</p>
                     </div>
                 </div>
@@ -183,15 +201,41 @@
                 <a href="#hero"><i class="fas fa-arrow-up"></i></a>
             </div>
         </div>
+
         <footer id="footer">
-            <div class="footer-column">
-                <img class="logo" src="images/corono.svg" alt="">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <a href="#over-corono">over ons</a>
+                    <a href="">contact</a>
+                    <a href="">support</a>
+                    <a href="">info</a>
+                </div>
+                <div class="footer-column">
+                    <a href="">cookies</a>
+                    <a href="">privacybeleid</a>
+                    <a href="">investeerders</a>
+                    <a href="">algemene voorwaarden</a>
+                </div>
+                <div class="footer-column">
+                    <p>meld je nu aan voor de nieuwsbrief en mis niets van corono!</p>
+                    <div class="nieuwsbrief-container">
+                        <input type="text" placeholder="jouw email adres">
+                        <button type="submit">houd me op de hoogte</button>
+                    </div>
+                </div>
             </div>
-            <div class="footer-column">
-                <p>© 2021 corono</p>
-                <a href="https://github.com/svmcd/corono" target="_blank"><i class="fab fa-github" ></i></a>
+            <div class="footer-bottom">
+                <hr>
+                <div class="footer-footer">
+                    <img src="images/corono.svg" alt="">
+                    <div>
+                        <p>© 2021 corono</p>
+                        <a href="https://github.com/svmcd/corono" target="_blank"><i class="fab fa-github" ></i></a>
+                    </div>
+                </div>
             </div>
         </footer>
+
         <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>

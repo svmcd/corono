@@ -14,16 +14,8 @@
     </head>
     <body>
         <div id="hero" class="section hero">
-            <header class="nav" id="nav">
-                <a href="../index.html"><img class="logo" src="../images/corono.svg" alt=""></a>
-                <button class="hamburger" id="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
-                <div class="header-links" id="header-links">
-                    <a href="../index.html#overcorono" id="over-corono" class="header-links-link link">over corono</a>
-                    <a href="../index.html#winkels" class="header-links-link link">winkels</a>
-                    <a href="support.html" id="support" class="header-links-link link">support</a>
-                    <a href="../index.html#wordlid" class="cta-button">word lid</a>
-                </div>
-            </header>
+            
+            <?php include '../components/header.php'; ?>
 
             <div class="section over-corono-container">
                 <div class="over-corono">
@@ -42,15 +34,7 @@
                 <path fill="#007EA7" fill-opacity="1" d="M0,128L40,122.7C80,117,160,107,240,122.7C320,139,400,181,480,202.7C560,224,640,224,720,218.7C800,213,880,203,960,202.7C1040,203,1120,213,1200,202.7C1280,192,1360,160,1400,144L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
             </svg>
         </div>
-        <footer class="contact-footer">
-            <div class="footer-column">
-                <img class="logo" src="../images/corono.svg" alt="">
-            </div>
-            <div class="footer-column">
-                <p>© 2021 corono</p>
-                <a href="https://github.com/svmcd/corono" target="_blank"><i class="fab fa-github" ></i></a>
-            </div>
-        </footer>
+        <?php include '../components/footer.php'; ?>
         <script type="text/javascript" src="../js/script.js"></script>
     </body>
 </html>

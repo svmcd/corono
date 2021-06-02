@@ -189,31 +189,6 @@
   .normal-button:hover::after {
     transform: scaleX(1);
   }
-  
-  footer {
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  footer .footer-column {
-    padding: 0 4em;
-    display: flex;
-    align-items: center;
-  }
-  footer .footer-column .logo {
-    height: 2rem;
-    cursor: pointer;
-  }
-  footer .footer-column i {
-    margin-left: 0.5em;
-    font-size: 1.5rem;
-    color: var(--primary);
-  }
-  footer .footer-column i:hover {
-    transition: color 0.4s;
-    color: var(--secondary);
-  }
 
   .link {
     color: var(--secondary);
@@ -242,3 +217,102 @@
   .belangrijk {
     color: var(--secondary);
   }
+
+  footer {
+    
+  }
+  
+.footer-top {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  padding: 0 4em;
+  justify-content: center;
+}
+
+.footer-top .footer-column {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top .footer-column a{
+  color: var(--primary);
+  line-height: 2em;
+}
+
+.footer-top .footer-column p {
+  color: var(--primary);
+  margin-bottom: .5em;
+}
+
+.footer-top .footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-top .footer-column .nieuwsbrief-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footer-top .footer-column .nieuwsbrief-container input{
+  padding: .8em;
+  font-size: .8em;
+}
+
+.footer-top .footer-column .nieuwsbrief-container button {
+  padding: 1em;
+  border-radius: 0 0px 10px 10px;
+  border: none;
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+  font-size: .8em;
+  cursor: pointer;
+  border: 2px solid var(--primary);
+}
+
+.footer-top .footer-column .nieuwsbrief-container button:hover {
+  background-color: var(--white);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  transition: .2s;
+}
+
+
+
+.footer-bottom {
+  height: 10vh;
+  padding: 0 4em;
+}
+
+.footer-bottom hr {
+  border-color: var(--primary);
+}
+
+.footer-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-footer div {
+  display: flex;
+  align-items: center;
+}
+
+.footer-footer div p {
+  margin-right: 1em;
+}
+
+.footer-footer div a {
+  font-size: 1.5em;
+  color: var(--primary);
+}
+
+
+.footer-bottom img {
+  height: 20px;
+}
