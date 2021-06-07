@@ -259,11 +259,15 @@
 .footer-top .footer-column .nieuwsbrief-container input{
   padding: .8em;
   font-size: .8em;
+  border-radius: 10px 10px 0 0;
+  border-style: solid;
+  border-color: var(--primary);
+  border-width: 2px;
 }
 
 .footer-top .footer-column .nieuwsbrief-container button {
   padding: 1em;
-  border-radius: 0 0px 10px 10px;
+  border-radius: 0 0px 20px 20px;
   border: none;
   background-color: var(--primary);
   color: var(--white);

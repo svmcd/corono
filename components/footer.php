@@ -25,7 +25,7 @@ echo '<footer id="footer">
 <div class="footer-bottom">
     <hr>
     <div class="footer-footer">
-        <img src="images/corono.svg" alt="">
+        <img src="../images/corono.svg" alt="">
         <div>
             <p>© 2021 corono</p>
             <a href="https://github.com/svmcd/corono" target="_blank"><i class="fab fa-github" ></i></a>

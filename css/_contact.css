@@ -12,24 +12,42 @@
 }
 
 .contact-container form {
-    padding: 4em;
+    padding: 2em;
 }
 
-.contact-form-container {
-    display: flex;
+label {
+    padding: .4em;
+    background-color: var(--light);
+    border-radius: 10px 10px 0px 0px;
 }
 
-.contact-form-container * {
-    margin: 2px;
+form input {
+    font-size: 1em;
+    padding: .25em;
+    border-radius: 10px;
+    width: 500px;
+    border-style: none;
+    border: 2px solid var(--light);
+    border-radius: 0px 0px 10px 10px;
 }
 
-.form-input {
+.input-group {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-bottom: 1em;
 }
 
-.contact-form-container .left, .right {
-    display: flex;
-    flex-direction: column;
+textarea {
+    resize: none;
+    font-size: 1em;
+    padding: .25em;
+    border-radius: 10px;
+    border-style: none;
+    border: 2px solid var(--light);
+    resize: none;
+    border-radius: 0px 0px 10px 10px;
+}
+
+button {
+    font-size: 1em;
 }

@@ -1,4 +1,37 @@
 <!DOCTYPE html>
+
+<?php
+
+    $message_sent = false;
+
+    if(isset($_POST['email']) && $_POST['email'] != ''){
+
+        if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+
+
+            $name = $_POST['naam'];
+            $email = $_POST['email'];
+            $message = $_POST['message'];
+            $headers = "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+            $headers .= 'From: ' .$naam. '<contact@corono.nl>' . "\r\n"; 
+        
+            $to = "spolat0750@gmail.com";
+            $body = "";
+        
+            $body .= "From: ".$naam. "\r\n";
+            $body .= "Email: ".$email. "\r\n";
+            $body .= "Message: ".$message. "\r\n";
+        
+            mail($to, $body, $headers);
+
+            $message_sent = true;
+        } 
+
+    }
+
+?>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -19,30 +52,35 @@
 
             <div class="section contact-container">
                 <h2>contact</h2>
-                <form action="">
-                    <div class="contact-form-container">
-                        <div class="left">
-                            <div class=" form-input email">
-                                <label for="email">email</label>
-                                <input type="email" name="email" id="email" required maxlength="50">
-                            </div>
-                            <div class=" form-input voornaam">
-                                <label for="voornaam">voornaam</label>
-                                <input type="text" name="voornaam" id="voornaam" required maxlength="20">
-                            </div>
-                            <div class=" form-input achternaam">
-                                <label for="achternaam">achternaam</label>
-                                <input type="text" name="achternaam" id="achternaam" required maxlength="20">
-                            </div>
-                        </div>
-    
-                        <div class="right">
-                            <label for="message">beschrijving</label>
-                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                            <input type="submit">
-                        </div>
+                <?php
+                if($message_sent):
+                ?>
+                    <h3>Bedankt!</h3>
+                    <p>Je krijgt zo snel mogelijk een reactie terug</p>
+                <?php
+                else:
+                ?>
+                <form action="contact.php" method="POST" >
+                    <div class="input-group">
+                        <label for="voornaam">je naam:</label>
+                        <input required placeholder="naam" name="naam" type="text">
                     </div>
+                    <div class="input-group">
+                        <label for="email">je email:</label>
+                        <input required placeholder="email" name="email" type="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">je bericht:</label>
+                        <textarea required placeholder="bericht" name="message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="button cta-button" >verstuur</button>
+                    </div> 
+
                 </form>
+                <?php
+                endif;
+                ?>
             </div>
 
             <svg class="wave"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

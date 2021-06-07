@@ -79,6 +79,15 @@
       font-size: 1px;
     }
 
+    #winkels-grid-container {
+ 
+    }
+
+    #winkels-grid-container .item{
+
+    }
+
+
     #wordlid {
       height: 275vh;
     }
@@ -127,4 +136,6 @@
     #header-links.show {
       display: flex;
     }
+
+    
   }
