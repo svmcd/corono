@@ -26,9 +26,9 @@
                         <p>nee, het corono abonnement geldt nog niet in alle winkels en horeca. <a class="link" href="../index.html#winkels">hier</a> kun je zien in welke winkels en horeca een corono abonnement op dit moment geldig is.</p>
                     </div>
 
-                    <button class="acc-btn">vraag 2</button>
+                    <button class="acc-btn">waar laat ik mijn corono pasje zien als ik binnen een winkel wil?</button>
                     <div class="acc-content">
-                        <p>hoi</p>
+                        <p>naast de rij van de mensen die wachten staat er een bordje voor de corono leden waar  </p>
                     </div>
 
                     <button class="acc-btn">vraag 3</button>

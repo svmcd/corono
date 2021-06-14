@@ -14,12 +14,12 @@
             $message = $_POST['message'];
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-            $headers .= 'From: ' .$naam. '<contact@corono.nl>' . "\r\n"; 
+            $headers .= 'From: ' .$name. '<contact@corono.nl>' . "\r\n"; 
         
             $to = "spolat0750@gmail.com";
             $body = "";
         
-            $body .= "From: ".$naam. "\r\n";
+            $body .= "From: ".$name. "\r\n";
             $body .= "Email: ".$email. "\r\n";
             $body .= "Message: ".$message. "\r\n";
         
@@ -27,7 +27,6 @@
 
             $message_sent = true;
         } 
-
     }
 
 ?>
@@ -51,15 +50,15 @@
             <?php include '../components/header.php'; ?>
 
             <div class="section contact-container">
-                <h2>contact</h2>
                 <?php
                 if($message_sent):
                 ?>
-                    <h3>Bedankt!</h3>
-                    <p>Je krijgt zo snel mogelijk een reactie terug</p>
-                <?php
+                    <h3 style="color:#007EA7;" >bedankt!</h3>
+                    <p>je krijgt zo snel mogelijk een reactie terug :)</p>
+                <?php 
                 else:
                 ?>
+                <h2>contact</h2>
                 <form action="contact.php" method="POST" >
                     <div class="input-group">
                         <label for="voornaam">je naam:</label>

@@ -217,10 +217,6 @@
   .belangrijk {
     color: var(--secondary);
   }
-
-  footer {
-    
-  }
   
 .footer-top {
   height: 30vh;
@@ -263,6 +259,7 @@
   border-style: solid;
   border-color: var(--primary);
   border-width: 2px;
+  border-bottom: none;
 }
 
 .footer-top .footer-column .nieuwsbrief-container button {
