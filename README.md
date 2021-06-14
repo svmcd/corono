@@ -1,4 +1,4 @@
-![corono](images/corono.svg)
+![corono](source code/images/corono.svg)
 
 ---
 
