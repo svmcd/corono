@@ -80,11 +80,17 @@
     }
 
     #winkels-grid-container {
- 
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      width: 100%;
     }
 
-    #winkels-grid-container .item{
+    .item10 {
+      display: none;
+    }
 
+    #winkels-grid-container img{
+      height: 120px;
     }
 
 
